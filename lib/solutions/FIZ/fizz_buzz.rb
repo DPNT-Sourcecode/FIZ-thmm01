@@ -32,3 +32,5 @@ class FizzBuzz
       return number
     end
   end
+end
+
