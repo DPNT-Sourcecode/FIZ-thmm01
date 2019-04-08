@@ -11,15 +11,15 @@ class FizzBuzz
          end
          return "fizz buzz"
     elsif ((number % 5 == 0) && number.to_s.include?('5'))
-        if number % 2 == 0
+        if number % 2 != 0
          return "buzz fake deluxe"
         else
          return "deluxe"
         end
       return "buzz"
 
-    elsif ((number % 3 == 0) || number.to_s.include?('3'))
-        if number % 2 == 0
+    elsif ((number % 3 == 0) && number.to_s.include?('3'))
+        if number % 2 != 0
           return "fizz fake deluxe"
         else
          return "deluxe"
@@ -38,4 +38,5 @@ class FizzBuzz
   end
 
 end
+
 
