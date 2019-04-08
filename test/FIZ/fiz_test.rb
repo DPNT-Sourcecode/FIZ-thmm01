@@ -12,6 +12,7 @@ class ClientTest < Minitest::Test
     assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'App should return fizz buzz deluxe'
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(546), 'App should return fizzbuzz'
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(5), 'App should return buzz'
+    assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'App should return buzz deluxe'
     assert_equal 'fizz deluxe', FizzBuzz.new.fizz_buzz(33), 'App should return fizz deluxe'
     assert_equal 'fizz', FizzBuzz.new.fizz_buzz(3), 'App should return fizz'
     assert_equal 'deluxe', FizzBuzz.new.fizz_buzz(11), 'App should return deluxe'
