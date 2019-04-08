@@ -9,7 +9,7 @@ class FizzBuzz
          else
          return "fizz buzz deluxe"
          end
-         return "fizz buzz"
+         return "deluxe"
     elsif ((number % 5 == 0) || number.to_s.include?('5'))
         if number % 2 != 0
          return "buzz fake deluxe"
@@ -35,6 +35,7 @@ class FizzBuzz
       return number
     end
   end
+
 
 
 
