@@ -9,7 +9,7 @@ class ClientTest < Minitest::Test
 
   def test_fiz
 
-    # assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'App should return fizz buzz deluxe'
+    assert_equal 'fizz buzz deluxe', FizzBuzz.new.fizz_buzz(555), 'App should return fizz buzz deluxe'
     assert_equal 'fizz buzz', FizzBuzz.new.fizz_buzz(546), 'App should return fizzbuzz'
     assert_equal 'buzz', FizzBuzz.new.fizz_buzz(5), 'App should return buzz'
     assert_equal 'buzz deluxe', FizzBuzz.new.fizz_buzz(55), 'App should return buzz deluxe'
@@ -22,4 +22,3 @@ class ClientTest < Minitest::Test
   end
 
 end
-
