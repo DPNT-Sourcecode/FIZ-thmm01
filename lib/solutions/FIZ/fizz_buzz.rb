@@ -22,7 +22,11 @@ class FizzBuzz
       return "fizz"
       end
     elsif (number > 10) && (number.to_s.chars.uniq.length == 1)
+      if number % 2 != 0
+      return "fake deluxe"
+    else
       return "deluxe"
+    end
     else
       return number
     end
