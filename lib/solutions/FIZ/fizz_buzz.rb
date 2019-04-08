@@ -12,7 +12,11 @@ class FizzBuzz
     elsif ((number % 5 == 0)|| number.to_s.include?('5'))
       return "buzz"
     elsif ((number % 3 == 0) || number.to_s.include?('3'))
+      if (number > 10) && (number.to_s.include?('33'))
+        return "fizz deluxe"
+      else
       return "fizz"
+    end
     elsif (number > 10) && (number.to_s.chars.uniq.length == 1)
       return "deluxe"
     else
@@ -21,4 +25,5 @@ class FizzBuzz
   end
 
 end
+
 
