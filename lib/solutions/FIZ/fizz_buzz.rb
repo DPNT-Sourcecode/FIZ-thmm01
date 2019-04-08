@@ -13,10 +13,13 @@ class FizzBuzz
       return "buzz"
     elsif ((number % 3 == 0) || number.to_s.include?('3'))
       return "fizz"
-     else
+    elsif (number.to_s.include?('11'))
+      return "deluxe"
+    else
       return number
     end
   end
 
 end
+
 
