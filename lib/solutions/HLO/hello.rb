@@ -2,10 +2,11 @@
 class Hello
 
   def hello(string)
-    string = "world"
-    return "Hello #{string}"
+    string = "World"
+    return "Hello,  #{string}!"
 
   end
 
 end
+
 
