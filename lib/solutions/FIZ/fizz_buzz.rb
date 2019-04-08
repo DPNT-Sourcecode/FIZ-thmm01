@@ -4,19 +4,23 @@ class FizzBuzz
   def fizz_buzz(number)
 
     if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')))
-      if (number > 10) && (number.to_s.include?('555'))
+      if (number > 10) && (number.to_s.chars.uniq.length == 1)
       return "fizz buzz deluxe"
       else
       return "fizz buzz"
       end
     elsif ((number % 5 == 0)|| number.to_s.include?('5'))
+      if (number > 10) && (number.to_s.chars.uniq.length == 1)
+      return "buzz deluxe"
+      else
       return "buzz"
+      end
     elsif ((number % 3 == 0) || number.to_s.include?('3'))
-      if (number > 10) && (number.to_s.include?('33'))
-        return "fizz deluxe"
+      if (number > 10) && (number.to_s.chars.uniq.length == 1)
+      return "fizz deluxe"
       else
       return "fizz"
-    end
+      end
     elsif (number > 10) && (number.to_s.chars.uniq.length == 1)
       return "deluxe"
     else
@@ -25,5 +29,3 @@ class FizzBuzz
   end
 
 end
-
-
