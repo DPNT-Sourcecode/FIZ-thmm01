@@ -8,8 +8,9 @@ require_solution 'hello_name.rb'
 class ClientTest < Minitest::Test
 
   def test_sum
-    assert_equal "Hello, John!", Hello.new.hello("John"), 'App should return string Hello John!'
+    assert_equal "Hello, John!", HelloName.new.hello("John"), 'App should return string Hello John!'
   end
 
 end
+
 
