@@ -3,15 +3,18 @@ class FizzBuzz
 
   def fizz_buzz(number)
     if number % 15 == 0
+      if (number % 5 == 0) || (number.to_s.include?('5')) && (number % 3 == 0) || (number.to_s.include?('3'))
+      return "fizz buzz deluxe"
+      end
       return "fizz buzz"
-    elsif (number % 5 == 0) || (number.to_s.include?('5'))
+    elsif (number % 5 == 0) && (number.to_s.include?('5'))
       if (number % 2 != 0)
         return "buzz fake deluxe"
       else
       return "buzz deluxe"
       end
       return "buzz"
-    elsif (number % 3 == 0) || (number.to_s.include?('3'))
+    elsif (number % 3 == 0) && (number.to_s.include?('3'))
       if (number % 2 != 0)
         return "fizz fake deluxe"
       else
@@ -31,6 +34,3 @@ class FizzBuzz
     end
   end
 end
-
-
-
