@@ -5,9 +5,13 @@ class FizzBuzz
 
     if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')))
       if (number > 10) && (number.to_s.chars.uniq.length == 1)
-      return "fizz buzz deluxe"
-      else
-      return "fizz buzz"
+        if number % 2 != 0
+         return "fizz buzz fake deluxe"
+         else
+         return "fizz buzz deluxe"
+         end
+       else
+         return "fizz buzz"
       end
     elsif ((number % 5 == 0)|| number.to_s.include?('5'))
       if (number > 10) && (number.to_s.chars.uniq.length == 1)
@@ -30,7 +34,7 @@ class FizzBuzz
       else
       return "fizz"
       end
-      
+
     elsif (number > 10) && (number.to_s.chars.uniq.length == 1)
       if number % 2 != 0
       return "fake deluxe"
@@ -43,3 +47,4 @@ class FizzBuzz
   end
 
 end
+
