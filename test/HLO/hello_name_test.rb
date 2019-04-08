@@ -3,7 +3,7 @@ require 'logging'
 
 Logging.logger.root.appenders = Logging.appenders.stdout
 
-require_solution 'HLO'
+require_solution 'hello_name.rb'
 
 class ClientTest < Minitest::Test
 
@@ -12,3 +12,4 @@ class ClientTest < Minitest::Test
   end
 
 end
+
