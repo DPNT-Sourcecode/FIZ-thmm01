@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
     if number % 15 == 0
-      return "fizz"
+      return "fizzbuzz"
     elsif number % 5 == 0
       return "buzz"
     elsif number % 3 == 0
@@ -14,3 +14,4 @@ class FizzBuzz
   end
 
 end
+
