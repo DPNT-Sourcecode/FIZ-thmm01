@@ -3,7 +3,7 @@ class FizzBuzz
 
   def fizz_buzz(number)
 
-    if  (number % 5 == 0 && number.to_s.include?('5')) || (number % 3 == 0 && number.to_s.include?('3'))
+    if  (number % 15 == 0) || (number % 5 == 0 && number.to_s.include?('5')) || (number % 3 == 0 && number.to_s.include?('3')) 
         if number % 2 != 0
          return "fizz buzz fake deluxe"
          else
@@ -35,6 +35,7 @@ class FizzBuzz
     end
   end
 end
+
 
 
 
