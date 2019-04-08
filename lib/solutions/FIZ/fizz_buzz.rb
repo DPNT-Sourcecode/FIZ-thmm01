@@ -26,6 +26,8 @@ class FizzBuzz
       else
       return "deluxe"
     end
+  elsif (number % 15 == 0) && (number % 2 != 0)
+    return "fizz buzz fake deluxe"
     else
       return number
     end
