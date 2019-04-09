@@ -1,8 +1,9 @@
-# noinspection RubyUnusedLocalVariable
+#noinspection RubyUnusedLocalVariable
 class Story
 
   def read
-    "Once upon a time"
+    puts "Once upon a time"
   end
 
 end
+
