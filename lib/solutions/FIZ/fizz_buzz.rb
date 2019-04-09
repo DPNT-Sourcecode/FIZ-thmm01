@@ -2,7 +2,8 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    raise 'Not implemented'
+    return "fizz buzz" if number % 15 == 0
   end
 
 end
+
